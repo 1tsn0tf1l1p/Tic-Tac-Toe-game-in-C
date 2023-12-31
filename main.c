@@ -33,7 +33,7 @@ void board_printing()
     printf("\n");
 }
 
-int isSafe()
+int isSafe() /// Checks how many free spaces there are left in the matrix.
 {
     int safe = 9;
 
@@ -51,7 +51,7 @@ int isSafe()
     return safe;
 }
 
-void move_player()
+void move_player() /// This function places a 'X' on the given coordinates where the player wanted to play.
 {
     int x;
     int y;
@@ -75,7 +75,7 @@ void move_player()
     } while (board[x][y] != ' ');
 }
 
-void move_computer()
+void move_computer() /// This function places a 'O' on the given coordinates where the computer generated the coordinates.
 {
     /// Setting the seed to a current computer time.
     srand(time(0));
