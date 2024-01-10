@@ -186,7 +186,7 @@ int main()
             break;
         }
 
-        printf("\e[1;1H\e[2J");
+        system("clear");
     }
 
     board_printing();
